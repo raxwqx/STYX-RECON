@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "styx-recon"
+version = "0.1.0"
+description = "Lightweight reconnaissance toolkit"
+requires-python = ">=3.10"
+dependencies = [
+    "dnspython",
+    "rich",
+]
+
+[project.scripts]
+styx-recon = "styxrecon.cli:main"
