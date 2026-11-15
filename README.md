@@ -12,6 +12,14 @@ It focuses on collecting publicly accessible DNS information and presenting the 
 
 - Optional, certificate-verified TLS inspection with bounded connection timeout (--tls).
 
+Run DNS collection with `styx-recon example.com`. Add `--tls` to make one certificate-verified TLS handshake on port 443; the default timeout is 5 seconds and can be set to at most 15 seconds through the Python API. JSON output includes the optional TLS result:
+
+```bash
+styx-recon example.com --tls --json
+```
+
+The TLS check makes a network connection only when requested. It uses the system trust store and reports a verification error instead of disabling certificate checks.
+
 * 🔎 DNS reconnaissance
 * 🌐 A record lookup
 * 🌐 AAAA record lookup
