@@ -10,6 +10,8 @@ It focuses on collecting publicly accessible DNS information and presenting the 
 
 ## ✨ Features
 
+- Optional, certificate-verified TLS inspection with bounded connection timeout (--tls).
+
 * 🔎 DNS reconnaissance
 * 🌐 A record lookup
 * 🌐 AAAA record lookup
